@@ -15,7 +15,9 @@ class FengGameManagerMKII : Photon.MonoBehaviour
   public void OnGUI()
   {   
 	else if ((this.inputManager != null) && this.inputManager.menuOn)
-	{
+	{	
+		float num7 = (((float) Screen.width) / 2f) - 320f;
+		float num8 = (((float) Screen.height) / 2f) - 250f;
 		if (((int) settings[0x40]) == 2)
 		{
 			GUI.Label(new Rect(num7 + 430f, num8 + 360f, 80f, 22f), customcolor + "Цвет газа:</color>", "Label");
