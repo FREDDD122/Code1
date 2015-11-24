@@ -3,7 +3,8 @@ using UnityEngine;
                 
 class FengGameManagerMKII : Photon.MonoBehaviour
 { 
-  void loadconfig()
+	public static object[] settings;
+	void loadconfig()
   {
 	object[] objArray = new object[500];
 	objArray[271] = PlayerPrefs.GetFloat("colorgasR", 1f);
