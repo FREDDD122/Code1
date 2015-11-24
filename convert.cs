@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,6 +7,10 @@ class FengGameManagerMKII
 	
 	string ConvertToChat(string text)
 	{
+		if (text.Contains("[-]"))
+		{
+			text = text.Replace("[-]", "");
+		}
 		if (text.Contains("]"))
 		{
 			text = text.Replace("]", ">");
@@ -40,3 +45,4 @@ class FengGameManagerMKII
 		}
 	}
 }
+
